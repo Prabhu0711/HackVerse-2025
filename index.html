@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackverse-25 - CMR College of Engineering & Technology</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Open+Sans:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header id="header" class="d-flex align-items-center">
-        <div class="container-fluid container-xxl d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
             <div id="logo" class="me-auto">
                 <a href="#hero" class="scrollto"><h1 class="logo-text">Hackverse-25</h1></a>
             </div>
-            <nav id="navbar" class="navbar order-last order-lg-0">
+            <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                     <li><a class="nav-link scrollto" href="#about">About</a></li>
                     <li><a class="nav-link scrollto" href="#themes">Themes</a></li>
-                    <li><a class="nav-link scrollto" href="#guidelines">Guidelines</a></li>
                     <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
                     <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                 </ul>
@@ -30,83 +29,84 @@
         </div>
     </header>
 
-    <section id="hero" class="d-flex align-items-center justify-content-center">
+    <section id="hero" class="d-flex align-items-center justify-content-center text-white">
         <div class="container text-center" data-aos="zoom-in" data-aos-delay="100">
             <h1>Hackverse-25</h1>
-            <h2>CMR College of Engineering & Technology Presents</h2>
-            <h3>A 24-Hour National-Level Hackathon</h3>
-            <p>September 24-25, 2025</p>
-            <a href="#about" class="btn-get-started scrollto">Learn More</a>
+            <p class="subtitle">CMR College of Engineering & Technology Presents</p>
+            <h2 class="tagline">A 24-Hour National-Level Hackathon</h2>
+            <p class="date">September 24-25, 2025</p>
+            <a href="#about" class="btn-primary-action scrollto">Discover More</a>
         </div>
+        <div class="hero-overlay"></div>
     </section>
 
     <main id="main">
 
-        <section id="about" class="about">
-            <div class="container" data-aos="fade-up">
-                <div class="row">
+        <section id="about" class="about section-spacing">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About the Event</h2>
+                    <p class="section-description">Unleash your potential, innovate with purpose, and build the future of technology.</p>
+                </div>
+                <div class="row about-content">
                     <div class="col-lg-6">
-                        <h2>About the Event</h2>
-                        <p>Join us at Hackverse-25, the premier national-level hackathon hosted by CMR College of Engineering & Technology. This 24-hour event is a platform for innovative minds to explore and create solutions in a diverse range of technological fields. We invite students from across the country to collaborate, learn from industry experts, and turn their groundbreaking ideas into reality. Hackverse is your chance to challenge the status quo, hone your technical skills, and make a tangible impact through technology.</p>
+                        <p>Join us at **Hackverse-25**, the premier national-level hackathon hosted by **CMR College of Engineering & Technology**. This 24-hour event is a platform for innovative minds to explore and create solutions in a diverse range of technological fields. We invite students from across the country to collaborate, learn from industry experts, and turn their groundbreaking ideas into reality.</p>
                     </div>
-                    <div class="col-lg-6 text-center">
-                        <div class="info-card">
-                            <h3>Where</h3>
-                            <p>CMR College of Engineering & Technology, Kandlakoya, Hyderabad</p>
-                        </div>
-                        <div class="info-card mt-4">
-                            <h3>When</h3>
-                            <p>Wednesday, September 24, 2025 – Thursday, September 25, 2025</p>
+                    <div class="col-lg-6">
+                        <p>Hackverse is your chance to challenge the status quo, hone your technical skills, and make a tangible impact through technology. It's more than just a competition; it's a launchpad for future leaders and a celebration of creativity, teamwork, and problem-solving.</p>
+                        <div class="info-details mt-4">
+                            <p><strong>Where:</strong> CMR College of Engineering & Technology, Kandlakoya, Hyderabad</p>
+                            <p><strong>When:</strong> Wednesday, September 24, 2025 – Thursday, September 25, 2025</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="themes" class="themes section-bg">
-            <div class="container" data-aos="fade-up">
-                <div class="section-header">
+        <section id="themes" class="themes section-spacing bg-dark-section">
+            <div class="container">
+                <div class="section-header text-center text-white">
                     <h2>Main Themes of Hackverse</h2>
-                    <p>Explore a diverse range of themes designed to challenge your creativity and technical prowess.</p>
+                    <p class="section-description">Explore a diverse range of themes designed to challenge your creativity and technical prowess.</p>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                        <div class="theme-item">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="theme-card">
                             <i class="fas fa-brain theme-icon"></i>
                             <h4>AI & Machine Learning</h4>
                             <p>Develop intelligent systems using neural networks, data science, and advanced algorithms.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                        <div class="theme-item">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="theme-card">
                             <i class="fas fa-lock theme-icon"></i>
                             <h4>Cybersecurity</h4>
                             <p>Build robust security solutions and ethical hacking tools for a safer digital world.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                        <div class="theme-item">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="theme-card">
                             <i class="fas fa-wifi theme-icon"></i>
                             <h4>Internet of Things (IoT)</h4>
                             <p>Create smart, connected devices for applications in home automation and industrial systems.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                        <div class="theme-item">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="theme-card">
                             <i class="fab fa-bitcoin theme-icon"></i>
                             <h4>Blockchain Technology</h4>
                             <p>Work with distributed ledger technology to build secure and decentralized applications.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                        <div class="theme-item">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="theme-card">
                             <i class="fas fa-atom theme-icon"></i>
                             <h4>Quantum Computing</h4>
                             <p>Delve into the future of computing with projects focused on quantum algorithms and cryptography.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-                        <div class="theme-item">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="theme-card">
                             <i class="fas fa-leaf theme-icon"></i>
                             <h4>Sustainable Technology</h4>
                             <p>Develop innovative solutions for a greener future, addressing environmental challenges with technology.</p>
@@ -116,128 +116,76 @@
             </div>
         </section>
 
-        <section id="guidelines" class="guidelines">
-            <div class="container" data-aos="fade-up">
-                <div class="section-header">
-                    <h2>Hackverse-25 GUIDELINES</h2>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="guideline-item">
-                            <i class="fas fa-users"></i>
-                            <h4>Team Formation</h4>
-                            <p>Each team should consist of 2-4 members with diverse skill sets.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="guideline-item">
-                            <i class="fas fa-money-bill-wave"></i>
-                            <h4>Registration Fee</h4>
-                            <p>A non-refundable fee of Rs. 1500 per team is required for registration.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="guideline-item">
-                            <i class="fas fa-user-check"></i>
-                            <h4>Eligibility</h4>
-                            <p>Open to all college students. A valid student ID is mandatory for verification.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="guideline-item">
-                            <i class="fas fa-code-branch"></i>
-                            <h4>Project Development</h4>
-                            <p>All work must be done during the hackathon. No pre-existing projects.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="guideline-item">
-                            <i class="fas fa-laptop-code"></i>
-                            <h4>Equipment</h4>
-                            <p>Participants must bring their own laptops and chargers. Internet will be provided.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="guideline-item">
-                            <i class="fas fa-trophy"></i>
-                            <h4>Judging Criteria</h4>
-                            <p>Projects will be evaluated on creativity, technical difficulty, impact, and presentation.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="schedule" class="schedule">
-            <div class="container" data-aos="fade-up">
+        <section id="schedule" class="schedule section-spacing">
+            <div class="container">
                 <div class="section-header">
                     <h2>Hackverse-25 Schedule</h2>
-                    <p>Here is our event schedule</p>
+                    <p class="section-description">Here is our event schedule</p>
                 </div>
                 <div class="schedule-tabs">
-                    <ul class="nav nav-tabs justify-content-center" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-bs-toggle="tab" href="#day1" role="tab">Day 1 (Sept 24)</a>
+                    <ul class="nav nav-pills justify-content-center mb-5" id="schedule-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="day1-tab" data-bs-toggle="pill" data-bs-target="#day1" type="button" role="tab" aria-controls="day1" aria-selected="true">Day 1 (Sept 24)</button>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#day2" role="tab">Day 2 (Sept 25)</a>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="day2-tab" data-bs-toggle="pill" data-bs-target="#day2" type="button" role="tab" aria-controls="day2" aria-selected="false">Day 2 (Sept 25)</button>
                         </li>
                     </ul>
                     <div class="tab-content">
-                        <div class="tab-pane fade show active" id="day1" role="tabpanel">
+                        <div class="tab-pane fade show active" id="day1" role="tabpanel" aria-labelledby="day1-tab">
                             <div class="schedule-item">
-                                <time>08:00 AM</time>
-                                <h4>Registration & Check-in</h4>
+                                <span class="time-stamp">08:00 AM</span>
+                                <h4 class="event-title">Registration & Check-in</h4>
                             </div>
                             <div class="schedule-item">
-                                <time>09:30 AM</time>
-                                <h4>Opening Ceremony</h4>
+                                <span class="time-stamp">09:30 AM</span>
+                                <h4 class="event-title">Opening Ceremony</h4>
                             </div>
                             <div class="schedule-item">
-                                <time>10:30 AM</time>
-                                <h4>Hacking Begins</h4>
+                                <span class="time-stamp">10:30 AM</span>
+                                <h4 class="event-title">Hacking Begins</h4>
                             </div>
                             <div class="schedule-item">
-                                <time>01:00 PM</time>
-                                <h4>Lunch</h4>
+                                <span class="time-stamp">01:00 PM</span>
+                                <h4 class="event-title">Lunch</h4>
                             </div>
                             <div class="schedule-item">
-                                <time>03:00 PM</time>
-                                <h4>Mentor Sessions</h4>
+                                <span class="time-stamp">03:00 PM</span>
+                                <h4 class="event-title">Mentor Sessions</h4>
                             </div>
                             <div class="schedule-item">
-                                <time>06:00 PM</time>
-                                <h4>First Checkpoint</h4>
+                                <span class="time-stamp">06:00 PM</span>
+                                <h4 class="event-title">First Checkpoint</h4>
                             </div>
                             <div class="schedule-item">
-                                <time>08:00 PM</time>
-                                <h4>Dinner</h4>
+                                <span class="time-stamp">08:00 PM</span>
+                                <h4 class="event-title">Dinner</h4>
                             </div>
                             <div class="schedule-item">
-                                <time>10:00 PM</time>
-                                <h4>Mini-Games & Fun Activities</h4>
+                                <span class="time-stamp">10:00 PM</span>
+                                <h4 class="event-title">Mini-Games & Fun Activities</h4>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="day2" role="tabpanel">
+                        <div class="tab-pane fade" id="day2" role="tabpanel" aria-labelledby="day2-tab">
                             <div class="schedule-item">
-                                <time>01:00 AM</time>
-                                <h4>Midnight Snack</h4>
+                                <span class="time-stamp">01:00 AM</span>
+                                <h4 class="event-title">Midnight Snack</h4>
                             </div>
                             <div class="schedule-item">
-                                <time>07:30 AM</time>
-                                <h4>Breakfast</h4>
+                                <span class="time-stamp">07:30 AM</span>
+                                <h4 class="event-title">Breakfast</h4>
                             </div>
                             <div class="schedule-item">
-                                <time>09:00 AM</time>
-                                <h4>Final Submissions</h4>
+                                <span class="time-stamp">09:00 AM</span>
+                                <h4 class="event-title">Final Submissions</h4>
                             </div>
                             <div class="schedule-item">
-                                <time>10:30 AM</time>
-                                <h4>Final Presentations</h4>
+                                <span class="time-stamp">10:30 AM</span>
+                                <h4 class="event-title">Final Presentations</h4>
                             </div>
                             <div class="schedule-item">
-                                <time>12:30 PM</time>
-                                <h4>Closing Ceremony</h4>
+                                <span class="time-stamp">12:30 PM</span>
+                                <h4 class="event-title">Closing Ceremony</h4>
                             </div>
                         </div>
                     </div>
@@ -245,52 +193,58 @@
             </div>
         </section>
 
-        <section id="contact" class="contact section-bg">
-            <div class="container" data-aos="fade-up">
-                <div class="section-header">
+        <section id="contact" class="contact section-spacing bg-dark-section">
+            <div class="container">
+                <div class="section-header text-white">
                     <h2>Contact Us</h2>
-                    <p>Reach Out, Connect, and Explore Possibilities Together!</p>
+                    <p class="section-description">Reach Out, Connect, and Explore Possibilities Together!</p>
                 </div>
-                <div class="row">
+                <div class="row contact-content">
                     <div class="col-lg-6">
-                        <div class="contact-info">
-                            <div class="address-card">
+                        <div class="contact-card">
+                            <div class="contact-item">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <h3>Address</h3>
-                                <p>CMR College of Engineering & Technology, Kandlakoya, Medchal Road, Hyderabad – 501401, Telangana</p>
+                                <div>
+                                    <h4>Address</h4>
+                                    <p>CMR College of Engineering & Technology, Kandlakoya, Medchal Road, Hyderabad – 501401, Telangana</p>
+                                </div>
                             </div>
-                            <div class="phone-card">
+                            <div class="contact-item">
                                 <i class="fas fa-phone"></i>
-                                <h3>Phone Number</h3>
-                                <p><a href="tel:+919876543210">+91 9876543210</a></p>
+                                <div>
+                                    <h4>Phone Number</h4>
+                                    <p><a href="tel:+919876543210">+91 9876543210</a></p>
+                                </div>
                             </div>
-                            <div class="email-card">
+                            <div class="contact-item">
                                 <i class="fas fa-envelope"></i>
-                                <h3>Email</h3>
-                                <p><a href="mailto:hackverse@cmrcet.ac.in">hackverse@cmrcet.ac.in</a></p>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:hackverse@cmrcet.ac.in">hackverse@cmrcet.ac.in</a></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <form id="contact-form" class="contact-form">
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                                <div class="invalid-feedback">Please enter your name.</div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                <label for="name">Your Name</label>
                             </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                                <div class="invalid-feedback">Please enter a valid email.</div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                                <label for="email">Your Email</label>
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                                <div class="invalid-feedback">Please enter a subject.</div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                                <label for="subject">Subject</label>
                             </div>
-                            <div class="form-group">
-                                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                                <div class="invalid-feedback">Please enter a message.</div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                                <label for="message">Message</label>
                             </div>
                             <div class="text-center">
-                                <button type="submit" class="submit-button">Send Message</button>
+                                <button type="submit" class="btn-primary-action">Send Message</button>
                             </div>
                         </form>
                     </div>
@@ -319,10 +273,10 @@
                 </div>
             </div>
             <div class="social-links mt-4">
-                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
             </div>
             <div class="copyright mt-4">
                 &copy; 2025 Copyright <strong>Hackverse-25</strong>. All Rights Reserved
