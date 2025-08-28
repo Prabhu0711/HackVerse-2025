@@ -5,11 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
             const targetId = e.currentTarget.getAttribute('href');
-            if (targetId) {
+            if (targetId && targetId !== '#') {
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
+                    const headerHeight = document.getElementById('header').offsetHeight;
                     window.scrollTo({
-                        top: targetElement.offsetTop - 70, // Adjust for header height
+                        top: targetElement.offsetTop - headerHeight,
                         behavior: 'smooth'
                     });
                 }
@@ -61,14 +62,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 event.preventDefault();
                 event.stopPropagation();
             } else {
-                // If you want to send the form data to a server, add your logic here.
-                // For this example, we'll just prevent default submission.
                 event.preventDefault();
+                // You can add an AJAX call here to send the data to a server
                 alert('Form submitted successfully!');
+                contactForm.reset();
+                contactForm.classList.remove('was-validated');
             }
-
-            contactForm.classList.add('was-validated');
         });
     }
-
 });
