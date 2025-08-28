@@ -1,3 +1,51 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #f0f0f0;
+    background-color: #1a1a2e;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #e94560;
+}
+
+a {
+    color: #e94560;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff6e8a;
+}
+
+.section-spacing {
+    padding: 80px 0;
+}
+
+.section-header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #a0a0a0;
+    font-style: italic;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 /* Header */
 #header {
     background-color: rgba(26, 26, 46, 0.9);
@@ -78,12 +126,355 @@
     box-shadow: 0 0 20px rgba(233, 69, 96, 0.8);
 }
 
-/* Added for responsiveness */
+/* Hero Section */
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.8)), url('https://via.placeholder.com/1920x1080.png?text=Hackathon+Background') center center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+#hero h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    letter-spacing: -2px;
+}
+
+#hero .subtitle {
+    font-size: 1.5rem;
+    color: #ffc107;
+    margin: 0;
+}
+
+#hero .tagline {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+    margin: 20px 0;
+}
+
+#hero .date {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #a0a0a0;
+}
+
+.btn-primary-action {
+    background: linear-gradient(45deg, #e94560, #ff6e8a);
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    display: inline-block;
+    margin-top: 30px;
+    box-shadow: 0 5px 15px rgba(233, 69, 96, 0.4);
+}
+
+.btn-primary-action:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(233, 69, 96, 0.6);
+}
+
+/* About Section */
+.about-content p {
+    color: #a0a0a0;
+}
+
+.info-details {
+    background-color: #2a2a44;
+    padding: 30px;
+    border-radius: 10px;
+    color: #f0f0f0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.info-details p {
+    margin: 0;
+}
+
+/* Themes Section */
+.bg-dark-section {
+    background-color: #16162a;
+}
+
+.theme-card {
+    background-color: #2a2a44;
+    color: #f0f0f0;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    height: 100%;
+}
+
+.theme-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(233, 69, 96, 0.4);
+}
+
+.theme-card .theme-icon {
+    font-size: 3rem;
+    color: #e94560;
+    margin-bottom: 20px;
+}
+
+.theme-card h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.theme-card p {
+    color: #a0a0a0;
+}
+
+/* Schedule Section */
+.schedule .nav-pills .nav-link {
+    color: #e94560;
+    border: 1px solid #e94560;
+    border-radius: 50px;
+    padding: 10px 30px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.schedule .nav-pills .nav-link.active {
+    background-color: #e94560;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(233, 69, 96, 0.4);
+}
+
+.schedule-item {
+    background-color: #2a2a44;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-left: 5px solid #e94560;
+    transition: background-color 0.3s ease;
+}
+
+.schedule-item:hover {
+    background-color: #3a3a5a;
+}
+
+.schedule-item .time-stamp {
+    font-weight: 700;
+    color: #ffc107;
+    margin-right: 15px;
+    min-width: 100px;
+    display: inline-block;
+}
+
+.schedule-item .event-title {
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+}
+
+/* Contact Section */
+.contact-content {
+    align-items: center;
+}
+
+.contact-card {
+    background-color: #2a2a44;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+.contact-item i {
+    font-size: 2rem;
+    color: #e94560;
+    margin-right: 20px;
+}
+
+.contact-item h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+}
+
+.contact-item p {
+    margin: 0;
+    color: #a0a0a0;
+}
+
+.contact-item a {
+    color: #a0a0a0;
+}
+
+.contact-form {
+    background-color: #2a2a44;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.contact-form .form-control {
+    background-color: #1a1a2e;
+    border: 1px solid #444;
+    color: #f0f0f0;
+}
+
+.contact-form .form-control:focus {
+    background-color: #1a1a2e;
+    border-color: #e94560;
+    box-shadow: 0 0 0 0.25rem rgba(233, 69, 96, 0.25);
+}
+
+.contact-form .btn-primary-action {
+    width: 100%;
+}
+
+/* Footer */
+#footer {
+    background-color: #16162a;
+    color: #f0f0f0;
+    padding: 50px 0;
+    border-top: 1px solid rgba(233, 69, 96, 0.2);
+}
+
+.footer-content {
+    margin-bottom: 30px;
+}
+
+#footer .footer-info .logo-text {
+    font-size: 2.5rem;
+}
+
+#footer .footer-info p {
+    color: #a0a0a0;
+}
+
+#footer .footer-links h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #e94560;
+}
+
+#footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+#footer .footer-links a {
+    color: #a0a0a0;
+    transition: color 0.3s ease;
+}
+
+#footer .footer-links a:hover {
+    color: #fff;
+}
+
+.social-links .social-icon {
+    font-size: 1.2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.social-links .social-icon:hover {
+    background-color: #e94560;
+}
+
+.copyright {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+}
+
+.back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 20px;
+    bottom: 20px;
+    z-index: 996;
+    background-color: #e94560;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(233, 69, 96, 0.4);
+}
+
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.back-to-top i {
+    font-size: 1.5rem;
+}
+
 @media (max-width: 991px) {
     .navbar {
         display: none;
     }
     #header .container {
         justify-content: center;
+    }
+    .register-button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .logo-text {
+        font-size: 1.5rem;
+    }
+    #hero h1 {
+        font-size: 3rem;
+    }
+    #hero .tagline {
+        font-size: 1.8rem;
+    }
+    .about-content {
+        flex-direction: column;
+    }
+    .info-details {
+        margin-top: 20px;
+    }
+    .theme-card {
+        padding: 30px;
+    }
+    .schedule .nav-pills {
+        flex-direction: column;
+    }
+    .schedule .nav-pills .nav-link {
+        margin-bottom: 10px;
+    }
+    .contact-card, .contact-form {
+        margin-top: 20px;
     }
 }
